@@ -2,8 +2,10 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-car_data = pd.read_csv('vehicles_us.csv')  # lendo os dados
+car_data = pd.read_csv(
+    'C:/Users/julio/Desktop/sprint5_project/sprint5_project/vehicles_us.csv')  # lendo os dados
 st.header('Criação de gráficos de dados de carros:')
+
 hist_button = st.button('Criar histograma')  # criar um botão de histograma
 disp_button = st.button('Criar dispersão')  # criar um botão de dispersão
 build_histogram = st.checkbox('Criar um histograma')
